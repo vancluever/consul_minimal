@@ -1,0 +1,16 @@
+---
+driver:
+  name: vagrant
+  network:
+    - ["forwarded_port", {guest: 8500, host: 8500}]
+
+provisioner:
+  name: chef_zero
+
+platforms:
+  - name: ubuntu-16.04
+
+suites:
+  - name: server
+    run_list:
+      - recipe[consul_minimal::install]

@@ -1,0 +1,9 @@
+{
+  "datacenter": "<%= @datacenter -%>",
+  "data_dir": "<%= @data_dir -%>",
+  "log_level": "<%= @log_level -%>",
+  "node_name": "foobar",
+  <% unless @telemetry.empty? %>
+  "telemetry": <%= @telemetry %>
+  <% end %>
+}
