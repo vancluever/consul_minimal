@@ -21,3 +21,5 @@ Very little configuration should be necessary, but you can view
 [attributes/default.rb](attributes/default.rb) for some items that may be
 necessary, such as, for example, the datacenter that you are setting up in.
 All node attributes are annotated.
+
+[1]: https://consul.io/
