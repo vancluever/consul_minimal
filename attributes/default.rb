@@ -26,6 +26,14 @@ default['consul_minimal']['user'] = 'consul'
 # The home directory Consul will reside in.
 default['consul_minimal']['directory'] = '/opt/consul'
 
+# The number of servers we want available before bootstrapping a new cluster.
+# For server testing, it's best to set this to 1, so that you can get up and
+# running quickly.
+#
+# The default is to not define this setting, expecting default bootstrap
+# behaviour (3 joined servers).
+default['consul_minimal']['bootstrap_expect'] = nil
+
 # The name of the default config file. Any other configurations (ie: watchers)
 # should be added with a different priority. This is achieved by prefixing
 # with a number higher than 00.

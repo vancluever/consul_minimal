@@ -17,6 +17,7 @@ config = {
 }
 
 config[:telemetry] = node['consul_minimal']['telemetry'] unless node['consul_minimal']['telemetry'].nil?
+config[:bootstrap_expect] = node['consul_minimal']['bootstrap_expect'] unless node['consul_minimal']['bootstrap_expect'].nil?
 
 service SERVICE_NAME do
   action :nothing

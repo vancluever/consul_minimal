@@ -14,3 +14,7 @@ suites:
   - name: server
     run_list:
       - recipe[consul_minimal::install]
+    attributes:
+      consul_minimal:
+        bootstrap_expect: 1
+        mode: server
