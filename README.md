@@ -10,7 +10,7 @@ For now, the two recipes that will be installed are:
 ## `consul_minimal::install`
 
 Will install Consul with a **minimal** configuration and a service configuration
-designed to get up and running as a or client node quickly.
+designed to get up and running as a server or client node quickly.
 
 Note that the mode that Consul runs in is dependent on what you set for the
 `node['consul_minimal']['mode']` node attribute.
