@@ -1,5 +1,3 @@
-require 'json'
-
 URL = "https://releases.hashicorp.com/consul/#{node['consul_minimal']['version']}".freeze
 ZIP = "consul_#{node['consul_minimal']['version']}_linux_amd64.zip".freeze
 ZIP_CACHE = "#{Chef::Config[:file_cache_path]}/#{ZIP}".freeze
